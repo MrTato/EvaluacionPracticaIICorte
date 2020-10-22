@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CRUD Tablas">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="DESKTOP-8LP93V4:DESKTOP-8LP93V4\BayardoJLS">
+          <Created>2020-10-21T20:05:39.8765439-06:00</Created>
+          <Type>SQL</Type>
+          <Server>DESKTOP-8LP93V4</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="DELETE_HumanResources_Department.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>DELETE_HumanResources_Department.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DELETE_Production_ProductCategory.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>DELETE_Production_ProductCategory.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DELETE_Production_UnitMeasure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>DELETE_Production_UnitMeasure.sql</FullPath>
+        </FileNode>
+        <FileNode Name="INSERT_HumanResources_Department.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>INSERT_HumanResources_Department.sql</FullPath>
+        </FileNode>
+        <FileNode Name="INSERT_Production_ProductCategory.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>INSERT_Production_ProductCategory.sql</FullPath>
+        </FileNode>
+        <FileNode Name="INSERT_Production_UnitMeasure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>INSERT_Production_UnitMeasure.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SELECT_HumanResources_Department.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SELECT_HumanResources_Department.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SELECT_Production_ProductCategory.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SELECT_Production_ProductCategory.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SELECT_Production_UnitMeasure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SELECT_Production_UnitMeasure.sql</FullPath>
+        </FileNode>
+        <FileNode Name="UPDATE_HumanResources_Department.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>UPDATE_HumanResources_Department.sql</FullPath>
+        </FileNode>
+        <FileNode Name="UPDATE_Production_ProductCategory.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>UPDATE_Production_ProductCategory.sql</FullPath>
+        </FileNode>
+        <FileNode Name="UPDATE_Production_UnitMeasure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-8LP93V4:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-8LP93V4</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>UPDATE_Production_UnitMeasure.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
