@@ -49,6 +49,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -120,13 +122,40 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\ServiceReferenceAW\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HumanResources_DepartmentController.cs" />
+    <Compile Include="Controllers\Production_ProductCategoryController.cs" />
+    <Compile Include="Controllers\Production_UnitMeasureController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HumanResources_DepartmentCLS.cs" />
+    <Compile Include="Models\Production_ProductCategoryCLS.cs" />
+    <Compile Include="Models\Production_UnitMeasureCLS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Connected Services\ServiceReferenceAW\ProyectoMVC.ServiceReferenceAW.SELECT_HumanResources_Department_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReferenceAW\ProyectoMVC.ServiceReferenceAW.SELECT_Production_ProductCategory_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReferenceAW\ProyectoMVC.ServiceReferenceAW.SELECT_Production_UnitMeasure_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReferenceAW\Service1.disco" />
+    <None Include="Connected Services\ServiceReferenceAW\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceAW\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceAW\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -137,6 +166,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Connected Services\ServiceReferenceAW\Service1.wsdl" />
+    <None Include="Connected Services\ServiceReferenceAW\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceAW\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReferenceAW\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -162,10 +201,19 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\HumanResources_Department\Index.cshtml" />
+    <Content Include="Views\Production_ProductCategory\Index.cshtml" />
+    <Content Include="Views\Production_UnitMeasure\Index.cshtml" />
+    <Content Include="Views\HumanResources_Department\Insert.cshtml" />
+    <Content Include="Views\Production_ProductCategory\Insert.cshtml" />
+    <Content Include="Views\Production_UnitMeasure\Insert.cshtml" />
+    <Content Include="Views\HumanResources_Department\Update.cshtml" />
+    <Content Include="Views\Production_ProductCategory\Update.cshtml" />
+    <Content Include="Views\Production_UnitMeasure\Update.cshtml" />
+    <Content Include="Views\Production_UnitMeasure\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -179,6 +227,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceAW\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

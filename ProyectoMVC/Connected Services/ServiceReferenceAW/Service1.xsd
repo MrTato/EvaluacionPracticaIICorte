@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ProyectoWCF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ProyectoWCF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:6180/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfSELECT_HumanResources_Department_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SELECT_HumanResources_Department_Result" nillable="true" type="tns:SELECT_HumanResources_Department_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSELECT_HumanResources_Department_Result" nillable="true" type="tns:ArrayOfSELECT_HumanResources_Department_Result" />
+  <xs:complexType name="SELECT_HumanResources_Department_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DepartmentID" type="xs:short" />
+      <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SELECT_HumanResources_Department_Result" nillable="true" type="tns:SELECT_HumanResources_Department_Result" />
+  <xs:complexType name="ArrayOfSELECT_Production_ProductCategory_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SELECT_Production_ProductCategory_Result" nillable="true" type="tns:SELECT_Production_ProductCategory_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSELECT_Production_ProductCategory_Result" nillable="true" type="tns:ArrayOfSELECT_Production_ProductCategory_Result" />
+  <xs:complexType name="SELECT_Production_ProductCategory_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductCategoryID" type="xs:int" />
+      <xs:element minOccurs="0" name="rowguid" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SELECT_Production_ProductCategory_Result" nillable="true" type="tns:SELECT_Production_ProductCategory_Result" />
+  <xs:complexType name="ArrayOfSELECT_Production_UnitMeasure_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SELECT_Production_UnitMeasure_Result" nillable="true" type="tns:SELECT_Production_UnitMeasure_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSELECT_Production_UnitMeasure_Result" nillable="true" type="tns:ArrayOfSELECT_Production_UnitMeasure_Result" />
+  <xs:complexType name="SELECT_Production_UnitMeasure_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitMeasureCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SELECT_Production_UnitMeasure_Result" nillable="true" type="tns:SELECT_Production_UnitMeasure_Result" />
+</xs:schema>
