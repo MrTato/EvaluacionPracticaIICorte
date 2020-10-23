@@ -45,11 +45,13 @@ namespace ProyectoWCF
     
         public virtual int DELETE_HumanResources_Department_Result(Nullable<short> departamentoID)
         {
+
             var departamentoIDParameter = departamentoID.HasValue ?
-                new ObjectParameter("DepartamentoID", departamentoID) :
-                new ObjectParameter("DepartamentoID", typeof(short));
-    
+            new ObjectParameter("DepartamentoID", departamentoID) :
+            new ObjectParameter("DepartamentoID", typeof(short));
+
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("DELETE_HumanResources_Department_Result", departamentoIDParameter);
+
         }
     
         public virtual int DELETE_Production_ProductCategory_Result(Nullable<int> productCategoryID)

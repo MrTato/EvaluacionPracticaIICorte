@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:6180/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:6180/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:6180/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ProyectoWCF" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DELETE_HumanResources_Department_Result_InputMessage">
+    <wsdl:part name="parameters" element="tns:DELETE_HumanResources_Department_Result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DELETE_HumanResources_Department_Result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DELETE_HumanResources_Department_ResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DELETE_Production_ProductCategory_Result_InputMessage">
+    <wsdl:part name="parameters" element="tns:DELETE_Production_ProductCategory_Result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DELETE_Production_ProductCategory_Result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DELETE_Production_ProductCategory_ResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DELETE_Production_UnitMeasure_Result_InputMessage">
+    <wsdl:part name="parameters" element="tns:DELETE_Production_UnitMeasure_Result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DELETE_Production_UnitMeasure_Result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DELETE_Production_UnitMeasure_ResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_INSERT_HumanResources_Department_Result_InputMessage">
+    <wsdl:part name="parameters" element="tns:INSERT_HumanResources_Department_Result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_INSERT_HumanResources_Department_Result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:INSERT_HumanResources_Department_ResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_INSERT_Production_ProductCategory_Result_InputMessage">
+    <wsdl:part name="parameters" element="tns:INSERT_Production_ProductCategory_Result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_INSERT_Production_ProductCategory_Result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:INSERT_Production_ProductCategory_ResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_INSERT_Production_UnitMeasure_Result_InputMessage">
+    <wsdl:part name="parameters" element="tns:INSERT_Production_UnitMeasure_Result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_INSERT_Production_UnitMeasure_Result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:INSERT_Production_UnitMeasure_ResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SELECT_HumanResources_Departments_InputMessage">
+    <wsdl:part name="parameters" element="tns:SELECT_HumanResources_Departments" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SELECT_HumanResources_Departments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SELECT_HumanResources_DepartmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SELECT_Production_ProductCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:SELECT_Production_ProductCategory" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SELECT_Production_ProductCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SELECT_Production_ProductCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SELECT_Production_UnitMeasure_InputMessage">
+    <wsdl:part name="parameters" element="tns:SELECT_Production_UnitMeasure" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SELECT_Production_UnitMeasure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SELECT_Production_UnitMeasureResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UPDATE_HumanResources_Department_Result_InputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATE_HumanResources_Department_Result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UPDATE_HumanResources_Department_Result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATE_HumanResources_Department_ResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UPDATE_Production_ProductCategory_Result_InputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATE_Production_ProductCategory_Result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UPDATE_Production_ProductCategory_Result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATE_Production_ProductCategory_ResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UPDATE_Production_UnitMeasure_Result_InputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATE_Production_UnitMeasure_Result" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UPDATE_Production_UnitMeasure_Result_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATE_Production_UnitMeasure_ResultResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DELETE_HumanResources_Department_Result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DELETE_HumanResources_Department_Result" message="tns:IService1_DELETE_HumanResources_Department_Result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DELETE_HumanResources_Department_ResultResponse" message="tns:IService1_DELETE_HumanResources_Department_Result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DELETE_Production_ProductCategory_Result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DELETE_Production_ProductCategory_Result" message="tns:IService1_DELETE_Production_ProductCategory_Result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DELETE_Production_ProductCategory_ResultResponse" message="tns:IService1_DELETE_Production_ProductCategory_Result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DELETE_Production_UnitMeasure_Result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DELETE_Production_UnitMeasure_Result" message="tns:IService1_DELETE_Production_UnitMeasure_Result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DELETE_Production_UnitMeasure_ResultResponse" message="tns:IService1_DELETE_Production_UnitMeasure_Result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_HumanResources_Department_Result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/INSERT_HumanResources_Department_Result" message="tns:IService1_INSERT_HumanResources_Department_Result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/INSERT_HumanResources_Department_ResultResponse" message="tns:IService1_INSERT_HumanResources_Department_Result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_Production_ProductCategory_Result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/INSERT_Production_ProductCategory_Result" message="tns:IService1_INSERT_Production_ProductCategory_Result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/INSERT_Production_ProductCategory_ResultResponse" message="tns:IService1_INSERT_Production_ProductCategory_Result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_Production_UnitMeasure_Result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/INSERT_Production_UnitMeasure_Result" message="tns:IService1_INSERT_Production_UnitMeasure_Result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/INSERT_Production_UnitMeasure_ResultResponse" message="tns:IService1_INSERT_Production_UnitMeasure_Result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SELECT_HumanResources_Departments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SELECT_HumanResources_Departments" message="tns:IService1_SELECT_HumanResources_Departments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SELECT_HumanResources_DepartmentsResponse" message="tns:IService1_SELECT_HumanResources_Departments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SELECT_Production_ProductCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SELECT_Production_ProductCategory" message="tns:IService1_SELECT_Production_ProductCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SELECT_Production_ProductCategoryResponse" message="tns:IService1_SELECT_Production_ProductCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SELECT_Production_UnitMeasure">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SELECT_Production_UnitMeasure" message="tns:IService1_SELECT_Production_UnitMeasure_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SELECT_Production_UnitMeasureResponse" message="tns:IService1_SELECT_Production_UnitMeasure_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UPDATE_HumanResources_Department_Result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UPDATE_HumanResources_Department_Result" message="tns:IService1_UPDATE_HumanResources_Department_Result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UPDATE_HumanResources_Department_ResultResponse" message="tns:IService1_UPDATE_HumanResources_Department_Result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UPDATE_Production_ProductCategory_Result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UPDATE_Production_ProductCategory_Result" message="tns:IService1_UPDATE_Production_ProductCategory_Result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UPDATE_Production_ProductCategory_ResultResponse" message="tns:IService1_UPDATE_Production_ProductCategory_Result_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UPDATE_Production_UnitMeasure_Result">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UPDATE_Production_UnitMeasure_Result" message="tns:IService1_UPDATE_Production_UnitMeasure_Result_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UPDATE_Production_UnitMeasure_ResultResponse" message="tns:IService1_UPDATE_Production_UnitMeasure_Result_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DELETE_HumanResources_Department_Result">
+      <soap:operation soapAction="http://tempuri.org/IService1/DELETE_HumanResources_Department_Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DELETE_Production_ProductCategory_Result">
+      <soap:operation soapAction="http://tempuri.org/IService1/DELETE_Production_ProductCategory_Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DELETE_Production_UnitMeasure_Result">
+      <soap:operation soapAction="http://tempuri.org/IService1/DELETE_Production_UnitMeasure_Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_HumanResources_Department_Result">
+      <soap:operation soapAction="http://tempuri.org/IService1/INSERT_HumanResources_Department_Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_Production_ProductCategory_Result">
+      <soap:operation soapAction="http://tempuri.org/IService1/INSERT_Production_ProductCategory_Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERT_Production_UnitMeasure_Result">
+      <soap:operation soapAction="http://tempuri.org/IService1/INSERT_Production_UnitMeasure_Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SELECT_HumanResources_Departments">
+      <soap:operation soapAction="http://tempuri.org/IService1/SELECT_HumanResources_Departments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SELECT_Production_ProductCategory">
+      <soap:operation soapAction="http://tempuri.org/IService1/SELECT_Production_ProductCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SELECT_Production_UnitMeasure">
+      <soap:operation soapAction="http://tempuri.org/IService1/SELECT_Production_UnitMeasure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPDATE_HumanResources_Department_Result">
+      <soap:operation soapAction="http://tempuri.org/IService1/UPDATE_HumanResources_Department_Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPDATE_Production_ProductCategory_Result">
+      <soap:operation soapAction="http://tempuri.org/IService1/UPDATE_Production_ProductCategory_Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPDATE_Production_UnitMeasure_Result">
+      <soap:operation soapAction="http://tempuri.org/IService1/UPDATE_Production_UnitMeasure_Result" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:6180/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
